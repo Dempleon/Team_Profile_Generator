@@ -10,5 +10,3 @@ describe('Manager classd', () => {
         expect(manager.officeNumber).toEqual(10);
     })
 })
-
-module.exports = Manager;
