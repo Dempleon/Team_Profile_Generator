@@ -10,5 +10,5 @@ describe('Engineer class', () => {
         expect(engineer.getGitHub()).toEqual('https://github.com/dempleon');
         expect(engineer.getRole()).toEqual('Engineer');
 
-    })
+    });
 })
