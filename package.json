@@ -8,14 +8,15 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dempleon/Team_Profile_Generator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daryl Empleo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Dempleon/Team_Profile_Generator/issues"
