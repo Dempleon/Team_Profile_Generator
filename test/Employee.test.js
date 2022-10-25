@@ -6,5 +6,6 @@ describe('Employee class', () => {
         expect(worker.getName()).toEqual('Daryl');
         expect(worker.getId()).toEqual(1);
         expect(worker.getEmail()).toEqual('daryl@gmail.com');
-    })
+        expect(worker.getRole()).toEqual('Employee');
+    });
 })
