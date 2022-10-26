@@ -8,6 +8,6 @@ describe('Manager class', () => {
         expect(manager.getId()).toEqual(2);
         expect(manager.getEmail()).toEqual('empleo@gmail.com');
         expect(manager.getRole()).toEqual('Manager');
-        expect(manager.officeNumber).toEqual(10);
+        expect(manager.getOffice()).toEqual(10);
     })
 })
