@@ -2,7 +2,7 @@
 # Team Profile Generator
 
 ## Description <br>
-The application is a command line application ran through node.js. A team manager can quickly create a webpage containing information about their team. The information for team members include their name, id, email, and role. The manager has an included office number, and the engineeres and interns have their github link or school information.
+The application is a command line application ran through node.js. A team manager can quickly create a webpage containing information about their team. The information for team members include their name, id, email, and role. The manager has an included office number, and the engineeres and interns have their github link or school information. The generated index.html file can be found inside the dist/ directory.
 <br>
 [Demo-Video](https://youtu.be/owJ-WARhkao)
 <br>
