@@ -5,9 +5,7 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-const generateManager = require('./src/generateManager')
-const generateEngineer = require('./src/generateEngineer')
-const generateIntern = require('./src/generateIntern')
+const generateTeam = require('./src/generateTeam')
 
 
 console.log('Welcome to the team generator!');
@@ -97,11 +95,9 @@ inquirer.prompt([
         ]
     }
 ]).then((answers) => {
-    // console.log(answers);
-    var manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
-    // var members = JSON.parse(answers.teamMembers);
-    // console.log('team members:---- ' + members[0]);
-    // console.log('team members: ' + answers.teamMembers[0]);
+
+    const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+
     const team = [];
     answers.teamMembers.forEach(member => {
         if(member.role === 'Engineer') {
@@ -113,8 +109,8 @@ inquirer.prompt([
             team.push(intern);
         }
     });
-    console.log(team);
-    var managerHTML = generateManager(manager);
+    // console.log(team);
+    var managerHTML = generateTeam(manager, team);
     const pagehtml = generateHTML(managerHTML);
     fs.writeFile('./dist/index.html', pagehtml, (error) => {
         error? console.error(error) : console.log('success');

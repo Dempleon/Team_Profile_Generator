@@ -3,6 +3,9 @@
     color: white;
     justify-content: center;
 }
+#mainDiv{
+    align-items: center;
+}
 
 .card-body {
     

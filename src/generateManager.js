@@ -1,7 +1,12 @@
-function generateManager(manager) {
-    
 
-    return `
+const Engineer = require("../lib/Engineer");
+
+
+function generateManager(manager) {
+    console.log('generate manager')
+    console.log(manager);
+
+    return`
     <div class="card" style="width: 18rem;">
     <div class="card-body">
     <h3 class="card-title">${manager.getName()}</h3>
@@ -15,5 +20,6 @@ function generateManager(manager) {
     </div>
     `
 }
+
 
 module.exports = generateManager;
